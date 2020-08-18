@@ -20,7 +20,7 @@ class Rank extends Component {
   }
 
   generateEmoji = (count) => {
-    fetch(`https://ctb7ghpy06.execute-api.us-east-1.amazonaws.com/dev/emoji?rank=${count}`)
+    fetch(`https://mqop0hdq9b.execute-api.us-east-1.amazonaws.com/prod/rankme?rank=${count}`)
       .then(response => response.json())
       .then(data => this.setState({emoji: data.input}))
       .catch(console.log)
